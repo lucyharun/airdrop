@@ -1,22 +1,106 @@
-COIN_SYMBOL=BETH
-COIN_NAME=Baby Ethereum
-AIRDROP_AMOUNT=10,000
-AIRDROP_DATE=20 July 2021
-AIRDROP_NETWORK=Binance Smart Chain
-BOT_TOKEN=1313552295:AAFxDGKhlco-FoWw-uyxInotlKvalidNEz-Q
-COIN_PRICE=$0.01
-REFERRAL_REWARD=1000
-WEBSITE_URL=https://bitcoinbutitsjustababy.com
-EXPLORER_URL=https://etherscan.io/address/0x0000000000000000000000000000000000000000
-TWITTER_LINKS=https://twitter.com/exampleaddress,
-ADMIN_USERNAME=admin
-TELEGRAM_LINKS=https://t.me/examplegroup,
-MAX_USERS=1000
-MAX_REFS=5
-CAPTCHA_ENABLED=YES
-
-
-MONGO_INITDB_ROOT_USERNAME=root
-MONGO_INITDB_ROOT_PASSWORD=secret_password
-MONGO_INITDB_IP=mongodb
-MONGO_INITDB_PORT=27017
+{
+    "name": "LucyHarun Airdrop",
+    "description": "Telegram Airdrop Bot Made by Lucy Harun",
+    "repository": "https://github.com/LucyHarun",
+    "logo": "https://telegra.ph/file/679d1e06aaecd9eb6d51b.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "youtube",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "repository": "https://github.com/LucyHarun",
+    "stack": "container",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Obtain a Telegram bot token by contacting @BotFather",
+            "required": true
+        },
+        "COIN_SYMBOL": {
+            "description": "LUCY",
+            "required": true
+        },
+        "COIN_NAME": {
+            "description": "LUCY HARUN",
+            "required": true
+        },
+        "AIRDROP_AMOUNT": {
+            "description": "TOTAL AMOUNT OF AIRDROP",
+            "required": true
+        },
+        "AIRDROP_DATE": {
+            "description": "END DATE OF AIRDROP EVENT",
+            "required": true
+        },
+        "AIRDROP_NETWORK": {
+            "description": "BSC, ETH, SOLANA, ETC",
+            "required": true
+        },
+        "COIN_PRICE": {
+            "description": "PRICE PER TOKEN",
+            "required": true
+        },
+        "REFERRAL_REWARD": {
+            "value": "3000",
+            "required": true
+        },
+        "WEBSITE_URL": {
+            "description": "HTTPS://XNXX.COM",
+            "required": true
+        },
+        "EXPLORER_URL": {
+            "description": "BSCSCAN.COM",
+            "value": "https://bscscan.com",
+            "required": true
+        },
+        "TWITTER_LINKS": {
+            "description": "https://twitter.com/lucy_harun",
+            "value": "https://twitter.com/lucy_harun",
+            "required": true
+        },
+        "ADMIN_USERNAME": {
+            "description": "asinpeda",
+            "required": true
+        },
+        "TELEGRAM_LINKS": {
+            "description": "https://t.me/CryptoCibay",
+            "required": true
+        },
+        "MAX_USERS": {
+            "description": "Max user entry",
+            "required": false
+        },
+        "MAX_REFS": {
+            "description": "max user referal",
+            "value": "300",
+            "required": true
+        },
+        "CAPTCHA_ENABLED":{
+            "description": "enable YES",
+            "value": "YES",
+            "required": true
+        },
+        "MONGO_INITDB_ROOT_USERNAME":{
+            "description": "root",
+            "value": "root",
+            "required": true
+        },
+        "MONGO_INITDB_ROOT_PASSWORD":{
+            "description": "password",
+            "value": "password",
+            "required": true
+        },
+        "MONGO_INITDB_IP":{
+            "description": "mongodb",
+            "value": "mongodb",
+            "required": true
+        },
+        "MONGO_INITDB_PORT":{
+            "description": "port",
+            "value": "27017",
+            "required": true
+        }
+    }
+}

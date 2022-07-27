@@ -83,18 +83,18 @@
             "required": true
         },
         "MONGO_INITDB_ROOT_USERNAME":{
-            "description": "root",
-            "value": "root",
+            "description": "mongodb username",
+            "value": "username",
             "required": true
         },
         "MONGO_INITDB_ROOT_PASSWORD":{
-            "description": "password",
+            "description": "mongodb password",
             "value": "password",
             "required": true
         },
         "MONGO_INITDB_IP":{
-            "description": "mongodb",
-            "value": "mongodb",
+            "description": "mongodb ip",
+            "value": "cluster0.k2ws9qv.mongodb.net",
             "required": true
         },
         "MONGO_INITDB_PORT":{

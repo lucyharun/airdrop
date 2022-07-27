@@ -70,6 +70,14 @@ Leave these to default unless you know what you do.
 - `MONGO_INITDB_IP` Mongodb IP
 - `MONGO_INITDB_PORT` Mongodb Port
 
-## Some Screenshots
-![1](./images/1.jpg)
-![1](./images/2.jpg)
+
+
+<h1>
+    <p align="center">
+        <a href="https://heroku.com/deploy?template=https://github.com/lucyharun/airdrop/">
+            <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+        </a>
+    </p>
+</h1>
+
+

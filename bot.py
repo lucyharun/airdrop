@@ -263,7 +263,6 @@ def follow_telegram(update, context):
     update.message.reply_text(text="Please click on \"Done\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
         [["Done"], ["Cancel"]]
     ))
-
     return FOLLOW_TWITTER
 
 

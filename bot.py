@@ -58,7 +58,7 @@ else:
     BOT_STATUS = {"status": "ON"}
 
 # %% MONGODB CONNECTION
-CONNECTION_STRING = f"mongodb+srv://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_IP}/myFirstDatabase?retryWrites=true&w=majority"
+CONNECTION_STRING = f"mongodb+srv://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_IP}/?retryWrites=true&w=majority"
 myclient = pymongo.MongoClient(CONNECTION_STRING)
 mydb = myclient["airdrop"]
 users = mydb["users"]

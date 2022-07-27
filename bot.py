@@ -428,12 +428,12 @@ reply_keyboard = [
 PROCEED, FOLLOW_TELEGRAM, FOLLOW_TWITTER, SUBMIT_ADDRESS, END_CONVERSATION, LOOP, SUREWANTTO, CAPTCHASTATE = range(8)
 cancelHandler = MessageHandler(Filters.regex('^Cancel$'), cancel)
 states = {
-    PROCEED: [MessageHandler(Filters.regex('^🚀 Join Airdrop$'), submit_details), cancelHandler],
-    FOLLOW_TELEGRAM: [MessageHandler(Filters.regex('^Submit Details$'), follow_telegram), cancelHandler],
-    FOLLOW_TWITTER: [MessageHandler(Filters.regex('^Done$'), follow_twitter), cancelHandler],
-    SUBMIT_ADDRESS: [cancelHandler, MessageHandler(Filters.text, submit_address)],
-    END_CONVERSATION: [cancelHandler, MessageHandler(Filters.regex('^0x[a-fA-F0-9]{40}$'), end_conversation)],
-    LOOP: [MessageHandler(
+    PROCEED: [MessageHandler(Filters.regex('^🚀 Join Airdrop$'), submit_details), cancelHandler,reset_handler],
+    FOLLOW_TELEGRAM: [MessageHandler(Filters.regex('^Submit Details$'), follow_telegram), cancelHandler,reset_handler],
+    FOLLOW_TWITTER: [MessageHandler(Filters.regex('^Done$'), follow_twitter), cancelHandler,reset_handler],
+    SUBMIT_ADDRESS : [cancelHandler,MessageHandler(Filters.regex('^https://twitter.com/.*'), submit_address),reset_handler],
+    END_CONVERSATION: [cancelHandler, MessageHandler(Filters.regex('^0x[a-fA-F0-9]{40}$'), end_conversation),reset_handler],
+    LOOP: [reset_handler,MessageHandler(
         Filters.text, loopAnswer
     )],
     SUREWANTTO: [MessageHandler(Filters.regex('^(YES|NO)$'), sureWantTo)],
